@@ -1,0 +1,104 @@
+.sidebar {
+    width: 3.5rem;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    transition: all .5s;
+    padding-right: .8rem;
+    font-size: 15px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul {
+        padding-left: 0.5rem;
+
+        .sidebar-item {
+            overflow: hidden;
+            .item-box {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                color: #25396f;
+                transition: all .5s;
+                padding: 0.5rem 0.38rem 0.15rem 0.5rem;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #f0f1f5;
+                }
+
+                .bi-chevron-down {
+                    margin-right: auto;
+                    font-size: .8rem;
+                }
+
+                span {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+            }
+
+            .submenu {
+                display: none;
+                .submenu-item {
+                    a {
+                        padding: .3rem 1rem;
+                        display: block;
+                        color: #25396f;
+                        transition: all .3s;
+
+                        font: {
+                            size: .85rem;
+                            weight: 600;
+                        }
+
+                        &:hover {
+                            padding-right: 1.4rem;
+                            color: #486dd1;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar-item.active {
+            .item-box {
+                background-color: #435ebe;
+            }
+
+            span,
+            i {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+
+.sidebar-toggle {
+    width: 200px;
+
+    .sidebar-item {
+        .item-box {
+            &:hover {
+                background-color: #f0f1f5;
+            }
+        }
+    }
+}

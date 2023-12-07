@@ -1,0 +1,17 @@
+.main{
+    background-color:#f2f7ff;
+    height:100vh;
+    position: relative;
+    transition: all .5s;
+    width: 100%;
+    direction: rtl;
+}
+@media (min-width:992px){
+    .main{
+        width: calc(100% - 3.5rem);
+    }
+}
+
+.main-toggle{
+    width: calc(100% - 200px);
+}

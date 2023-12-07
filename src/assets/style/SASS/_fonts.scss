@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Vazir-Medium-FD-WOL;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/FD/Vazir-Medium-FD-WOL.eot");
+    src: url("../fonts/FD/Vazir-Medium-FD-WOL.eot") format("eot"),
+        url("../fonts/FD/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+        url("../fonts/FD/Vazir-Medium-FD-WOL.woff") format("woff"),
+        url("../fonts/FD/Vazir-Medium-FD-WOL.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/fonts/eot/IRANSansWeb_Black.eot") format("eot"),
+        url('../fonts/fonts/woff/IRANSansX-black.woff') format('woff'),
+        url('../fonts/fonts/woff2/IRANSansX-black.woff2') format('woff2'),
+        url("../fonts/fonts/ttf/IRANSansWeb_Black.ttf") format("truetype");
+}
+
+* {
+    font-family: Vazir-Medium-FD-WOL;
+    font-size: 16px;
+    line-height: 28.6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: IRANSansX;
+    line-height: 2;
+}

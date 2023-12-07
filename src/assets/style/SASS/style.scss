@@ -1,0 +1,40 @@
+/* Published in : Sourcio
+
+Website : https://sourcio.ir
+Telegram channel : @SourcioIR
+
+Author : Aria
+Team : https://hectortm.ir | @HectorTM
+
+منتشر شده در : سورسیو
+
+وبسایت : https://sourcio.ir
+کانال تلگرام : @SourcioIR
+
+نویسنده : Aria
+تیم : https://hectortm.ir | @HectorTM 
+
+کپی برداری از این اثر بصورت غیر مجاز ( پاک کردن تگ های منبع (همین تگ) و تغییر نام و پاک کردن لینک ها) شرعا و قانونا حرام است و در صورت مشاهده توسط آریو پیگیری قضایی صورت میگیرد. */
+
+ 
+// رنگ های پیشفرض
+$my-primary: 43, 50, 178;
+$my-secondary: 20, 136, 204;
+$bg-them : #efefef;
+$white :#ffffff;
+
+// متغیر های css رنگ قالب
+:root {
+  --my-color-1: #{$my-primary};
+  --my-color-2: #{$my-secondary};
+}
+
+// Create your own map
+@import "../bootstrap/scss/_functions.scss";
+@import "../bootstrap/scss/_variables.scss";
+// Merge the maps
+@import "../bootstrap/scss/bootstrap";
+@import "./fonts";
+@import "./Utilities";
+@import "./sidebar";
+@import "./main";
