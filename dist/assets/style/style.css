@@ -12055,12 +12055,19 @@ i {
 .sidebar ul .sidebar-item.active i {
   color: #ffffff;
 }
+.sidebar h4, .sidebar .h4 {
+  opacity: 0;
+  transition: all 0.3s;
+}
 
 .sidebar-toggle {
   width: 200px;
 }
 .sidebar-toggle .sidebar-item .item-box:hover {
   background-color: #f0f1f5;
+}
+.sidebar-toggle h4, .sidebar-toggle .h4 {
+  opacity: 1;
 }
 
 .main {

@@ -102,6 +102,10 @@
             }
         }
     }
+    h4{
+       opacity: 0;
+       transition: all .3s;
+    }
 }
 
 
@@ -116,5 +120,9 @@
                 background-color: #f0f1f5;
             }
         }
+    }
+
+    h4{
+       opacity: 1;
     }
 }
