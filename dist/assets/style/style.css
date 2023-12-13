@@ -11953,8 +11953,26 @@ i {
   color: #7c8db5;
 }
 
-/* Header Start */
-/* Header End*/
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.bg-red {
+  background-color: #ff7976;
+}
+
+.text-gray-600 {
+  color: #6c757d;
+}
+
+.dropdown-menu {
+  text-align: right;
+}
+
 .sidebar {
   width: 4rem;
   height: 100vh;
@@ -12061,4 +12079,22 @@ i {
 }
 .main-toggle {
   width: calc(100% - 200px);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header div i {
+  color: #6c757d;
+}
+.main-header div .badge {
+  font-size: 0.6rem;
+}
+.main-header .admin-box::after {
+  display: none;
+}
+.main-header .admin-box p {
+  margin-top: -8px;
 }

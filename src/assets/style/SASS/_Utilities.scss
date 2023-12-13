@@ -27,40 +27,22 @@ i{
   color: #7c8db5;
 }
 
-/* Header Start */
+.fs-7{
+  font-size: 0.9rem;
+}
 
-// .offcanvas {
-//   width: 300px !important;
-// }
+.fs-8{
+  font-size: 0.8rem;
+}
 
-// .offcanvas-link {
-//   color: #38445a;
-//   display: flex;
-//   align-items: center;
-//   background-color: #f4f5f7;
-//   padding: 0px 18px;
-//   border-radius: 6px;
-//   font-weight: 500;
-//   height: 40px;
-//   margin-top: .7rem;
-// }
+.bg-red{
+  background-color: #ff7976;
+}
 
-// .my-dropdown{
-//   background-color: #f4f5f7;
-//   color: #38445a !important;
-//   padding: 1rem;
-//   display: none;
-// }
+.text-gray-600{
+  color: #6c757d;
+}
 
-// .my-dropdown ul li{
-//   padding: .3rem ;
-// }
-
-// .my-dropdown ul li a{
-//   color: #38445a !important;
-// }
-
-// .dropdown-btn::after {
-//   margin-right: auto;
-// }
-/* Header End*/
+.dropdown-menu{
+  text-align: right;
+}
