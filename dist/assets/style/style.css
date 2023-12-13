@@ -21,6 +21,23 @@ Team : https://hectortm.ir | @HectorTM
   --my-color-2: 20, 136, 204;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 /*!
  * Bootstrap  v5.3.0-alpha3 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11939,21 +11956,32 @@ i {
 /* Header Start */
 /* Header End*/
 .sidebar {
-  width: 3.5rem;
+  width: 4rem;
   height: 100vh;
   position: relative;
   background-color: white;
   transition: all 0.5s;
   padding-right: 0.8rem;
   font-size: 15px;
-  overflow: auto;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
+  overflow-y: auto;
+  scrollbar-color: #aaa #f1f1f1;
+  scrollbar-width: thin;
   /* Firefox */
 }
-.sidebar::-webkit-scrollbar {
-  display: none;
+.sidebar::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+.sidebar:hover::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+.sidebar:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #646464;
 }
 .sidebar ul {
   padding-left: 0.5rem;
