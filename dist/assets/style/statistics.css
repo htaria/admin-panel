@@ -1,0 +1,12 @@
+.statistics .icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statistics i {
+  color: #fff;
+  font-size: 1.7rem;
+}

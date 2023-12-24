@@ -7,36 +7,45 @@
     padding-right: .8rem;
     font-size: 15px;
     overflow-y: auto;
-    
+    overflow-x: hidden;
+
     scrollbar-color: #aaa #f1f1f1;
     scrollbar-width: thin;
+
     /* Firefox */
     &::-webkit-scrollbar-track {
         background-color: #fff;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: #fff;
     }
-    
-    &:hover{
+
+    &:hover {
         &::-webkit-scrollbar-track {
             background-color: #f1f1f1;
         }
+
         &::-webkit-scrollbar-thumb {
             background-color: #aaa;
         }
+
         &::-webkit-scrollbar-thumb:hover {
             background-color: #646464;
         }
     }
-    
+
+    .sidebar-btn {
+        cursor: pointer;
+    }
+
 
     ul {
         padding-left: 0.5rem;
 
         .sidebar-item {
             overflow: hidden;
+
             .item-box {
                 overflow: hidden;
                 display: flex;
@@ -69,6 +78,7 @@
 
             .submenu {
                 display: none;
+
                 .submenu-item {
                     a {
                         padding: .3rem 1rem;
@@ -102,13 +112,13 @@
             }
         }
     }
-    h4{
-       opacity: 0;
-       transition: all .3s;
+
+    h4 {
+        opacity: 0;
+        transition: all .3s;
     }
+
 }
-
-
 
 
 .sidebar-toggle {
@@ -122,7 +132,7 @@
         }
     }
 
-    h4{
-       opacity: 1;
+    h4 {
+        opacity: 1;
     }
 }

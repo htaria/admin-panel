@@ -13,10 +13,11 @@
 
     <section class="d-flex overflow-hidden">
         <section class="sidebar py-2">
-            <div class="text-center">
-                <h4>HectorTM.ir</h4>
+            <div class="d-flex align-items-center justify-content-between d-md-block text-md-center">
+                <h4 class="fw-bold">HectorTM.ir</h4>
+                <i class="bi bi-x sidebar-btn fs-1 d-md-none"></i>
             </div>
-            <ul>
+            <ul >
                 <li class="sidebar-item mt-2 active">
                     <a href="#" class="item-box">
                         <div>
@@ -311,11 +312,13 @@
                                 <i class="bi bi-bell fs-4"></i>
                             </div>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item fs-7" href="#">موجودی محصول «آیفون پرومکس 13» به اتمام رسید!</a></li>
+                                <li><a class="dropdown-item fs-7" href="#">موجودی محصول «آیفون پرومکس 13» به اتمام
+                                        رسید!</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item fs-7" href="#">یک دیدگاه جدید در «بهترین مدل آیفون» ثبت شد!</a></li>
+                                <li><a class="dropdown-item fs-7" href="#">یک دیدگاه جدید در «بهترین مدل آیفون» ثبت
+                                        شد!</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -353,17 +356,102 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item fs-7" href="#">
-                                    <i class="bi bi-box-arrow-left fs-6 ms-1"></i>
-                                    خروج
-                                </a>
-                            </li>
+                                        <i class="bi bi-box-arrow-left fs-6 ms-1"></i>
+                                        خروج
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                 </section>
             </header>
-            <section class="content">
-                <div class="container">
+            <section class="content p-2">
+                <div class="container-fluid">
+                    <div class="row gy-4">
+                        <div class="col-xl-9">
+                            <section class="statistics">
+                                <div class="row g-3">
+                                    <div class="col-6 col-md-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row g-3">
+                                                    <div class="col-lg-4">
+                                                        <div class="icon-box bg-purpel">
+                                                            <i class="bi bi-eye-fill lh-0"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <h6 class="fs-7 text-muted mb-0">بازدید کننده</h6>
+                                                        <h6 class="fw-bold mb-0 purecounter" data-purecounter-start="0"
+                                                            data-purecounter-end="12600"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row g-3">
+                                                    <div class="col-lg-4">
+                                                        <div class="icon-box bg-blue">
+                                                            <i class="bi bi-person-fill-add lh-0"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <h6 class="fs-7 text-muted mb-0">کاربر جدید</h6>
+                                                        <h6 class="fw-bold mb-0 purecounter" data-purecounter-start="0"
+                                                            data-purecounter-end="173"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row g-3">
+                                                    <div class="col-lg-4">
+                                                        <div class="icon-box bg-red">
+                                                            <i class="bi bi-cart-plus-fill lh-0"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <h6 class="fs-7 text-muted mb-0">خرید انجام شده</h6>
+                                                        <h6 class="fw-bold mb-0 purecounter" data-purecounter-start="0"
+                                                            data-purecounter-end="97"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row g-3">
+                                                    <div class="col-lg-4">
+                                                        <div class="icon-box bg-green">
+                                                            <i class="bi bi-cash-coin lh-0"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <h6 class="fs-7 text-muted mb-0">درآمد کسب شده</h6>
+                                                        <div class="d-flex">
+                                                            <h6 class="fw-bold mb-0 purecounter"
+                                                                data-purecounter-start="0" data-purecounter-end="7200000"
+                                                                data-purecounter-separator="true"></h6>
+                                                            <span class="me-2 fs-8">تومان</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-xl-3"></div>
 
+                    </div>
                 </div>
             </section>
         </section>
@@ -372,6 +460,7 @@
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/Plugins/purecounter.js"></script>
     <script src="./assets/js/mine.js"></script>
 </body>
 
