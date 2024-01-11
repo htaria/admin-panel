@@ -12092,7 +12092,7 @@ i {
 
 .main {
   background-color: #f2f7ff;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   transition: all 0.5s;
   width: 100%;
@@ -12141,6 +12141,15 @@ i {
 
 .card {
   border: none;
+  border-radius: 0.7rem;
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 0;
+  padding: 1rem;
+}
+.card-header:first-child {
   border-radius: 0.7rem;
 }
 

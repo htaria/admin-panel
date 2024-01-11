@@ -2,3 +2,12 @@
   border: none;
   border-radius: 0.7rem;
 }
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 0;
+  padding: 1rem;
+}
+.card-header:first-child {
+  border-radius: 0.7rem;
+}

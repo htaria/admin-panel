@@ -1,4 +1,14 @@
-.card{
+.card {
     border: none;
     border-radius: 0.7rem;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 0;
+    padding: 1rem;
+
+    &:first-child {
+        border-radius: 0.7rem;
+    }
 }

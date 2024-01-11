@@ -10,14 +10,13 @@
 </head>
 
 <body>
-
     <section class="d-flex overflow-hidden">
         <section class="sidebar py-2">
             <div class="d-flex align-items-center justify-content-between d-md-block text-md-center">
                 <h4 class="fw-bold">HectorTM.ir</h4>
                 <i class="bi bi-x sidebar-btn fs-1 d-md-none"></i>
             </div>
-            <ul >
+            <ul>
                 <li class="sidebar-item mt-2 active">
                     <a href="#" class="item-box">
                         <div>
@@ -331,7 +330,7 @@
                                     <img width="45" class="img-fluid rounded-3 ms-2"
                                         src="./assets/img/aria_avatar-128x128.png" alt="aria_avatar">
                                     <div>
-                                        <h6 class="fs-6 fw-bold mb-0 text-gray-600">آریا کرمی</h6>
+                                        <h6 class="fs-6 fw-bold mb-0">آریا کرمی</h6>
                                         <p class="fs-8 text-gray-600 mb-0">سوپر ادمین</p>
                                     </div>
                                 </div>
@@ -366,8 +365,9 @@
             </header>
             <section class="content p-2">
                 <div class="container-fluid">
-                    <div class="row gy-4">
+                    <div class="row gy-4 pb-5">
                         <div class="col-xl-9">
+                            <!-- Statistics Start -->
                             <section class="statistics">
                                 <div class="row g-3">
                                     <div class="col-6 col-md-3">
@@ -437,7 +437,8 @@
                                                         <h6 class="fs-7 text-muted mb-0">درآمد کسب شده</h6>
                                                         <div class="d-flex">
                                                             <h6 class="fw-bold mb-0 purecounter"
-                                                                data-purecounter-start="0" data-purecounter-end="7200000"
+                                                                data-purecounter-start="0"
+                                                                data-purecounter-end="7200000"
                                                                 data-purecounter-separator="true"></h6>
                                                             <span class="me-2 fs-8">تومان</span>
                                                         </div>
@@ -448,9 +449,33 @@
                                     </div>
                                 </div>
                             </section>
+                            <!-- Chart -->
+                            <section class="chart my-5">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>نمودار بازدید ماهانه</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Statistics End -->
                         </div>
-                        <div class="col-xl-3"></div>
-
+                        <!-- Admin Account Box Start -->
+                        <div class="col-xl-3">
+                            <div class="card">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <img width="70" class="img-fluid rounded-3 ms-2"
+                                        src="./assets/img/aria_avatar-128x128.png" alt="aria_avatar">
+                                    <div>
+                                        <h6 class="fw-bold mb-0">آریا کرمی</h6>
+                                        <p class="text-gray-600 mb-0">@ariaHT7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Admin Account Box End -->
                     </div>
                 </div>
             </section>
@@ -461,6 +486,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/Plugins/purecounter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./assets/js/mine.js"></script>
 </body>
 
