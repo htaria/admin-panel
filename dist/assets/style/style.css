@@ -11953,6 +11953,10 @@ a {
   direction: ltr;
 }
 
+.en-number {
+  font-family: math;
+}
+
 i {
   color: #7c8db5;
 }
@@ -12202,6 +12206,10 @@ a {
 
 .ltr {
   direction: ltr;
+}
+
+.en-number {
+  font-family: math;
 }
 
 i {
