@@ -45,7 +45,8 @@ jQuery(function () {
         }
     });
 });
-
+//====================================
+new PureCounter();
 //====================================
 const ctx = document.getElementById('myChart');
 
