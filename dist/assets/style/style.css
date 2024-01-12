@@ -11989,6 +11989,23 @@ i {
   text-align: right;
 }
 
+.user-id {
+  direction: ltr;
+  font-family: math;
+}
+
+.btn-light-primary {
+  background-color: #ebf3ff;
+  color: #002152;
+  border: 2px solid transparent;
+}
+.btn-light-primary:hover {
+  border: 2px solid #ebf3ff;
+}
+.btn-light-primary:active {
+  border: 2px solid #ebf3ff !important;
+}
+
 .sidebar {
   width: 4rem;
   height: 100vh;
@@ -12221,4 +12238,21 @@ i {
 
 .dropdown-menu {
   text-align: right;
+}
+
+.user-id {
+  direction: ltr;
+  font-family: math;
+}
+
+.btn-light-primary {
+  background-color: #ebf3ff;
+  color: #002152;
+  border: 2px solid transparent;
+}
+.btn-light-primary:hover {
+  border: 2px solid #ebf3ff;
+}
+.btn-light-primary:active {
+  border: 2px solid #ebf3ff !important;
 }
