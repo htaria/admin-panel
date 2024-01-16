@@ -18,6 +18,12 @@ gulp.task('copy-html', async function () {
         .pipe(gulp.dest('dist'));
 });
 
+// Add pages to dist/pages
+gulp.task('copy-pages', async function () {
+    gulp.src('src/pages/*.html')
+        .pipe(gulp.dest('dist/pages'));
+});
+
 //Minify images 
 gulp.task('minify-image', async function () {
     gulp.src('src/assets/img/*')
@@ -80,6 +86,7 @@ gulp.task('compile-Plugins-css', async function () {
 // Gulp watch task 4.*
 gulp.task('watch',async function() {
     gulp.watch('src/*.html',gulp.series('copy-html'));
+    gulp.watch('src/pages/*.html',gulp.series('copy-pages'));
     gulp.watch('src/assets/img/*',gulp.series('minify-image'));
     gulp.watch('src/assets/js/*.js',gulp.series('compress-js'));
     gulp.watch('src/assets/style/SASS/*.scss',gulp.series('compile-my-sass'));
@@ -91,5 +98,5 @@ gulp.task('watch',async function() {
 });
 
 //-------------
-gulp.task('default',gulp.parallel('msg','copy-html','minify-image','compress-js','compile-my-sass','compile-my-sass-min','compile-bootstrap','compile-bootstrap-min','compile-Plugins-js','compile-Plugins-css','watch'));
+gulp.task('default',gulp.parallel('msg','copy-html','copy-pages','minify-image','compress-js','compile-my-sass','compile-my-sass-min','compile-bootstrap','compile-bootstrap-min','compile-Plugins-js','compile-Plugins-css','watch'));
 // gulp.task('default',gulp.parallel('msg','watch','minify-image'));

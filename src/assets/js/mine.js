@@ -86,6 +86,47 @@ new Chart(ctx, {
             y: {
                 beginAtZero: true
             }
+        },
+        plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        size: 14,
+                        family: "Vazir-Medium-FD-WOL"
+                    }
+                }
+            }
+        }
+    }
+});
+//-------------------------------
+
+const ctx_2 = document.getElementById('support-chart');
+new Chart(ctx_2, {
+    type: 'doughnut',
+    data: {
+        labels: ["تیکت های پاسخ داده شده", "تیکت های پاسخ داده نشده", "چت های فعال"],
+        datasets: [
+            {
+                label: 'تیکت',
+                data: [30, 30, 20],
+
+
+                // borderWidth: 1,
+            },
+        ],
+    },
+
+    options: {
+        plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        size: 14,
+                        family: "Vazir-Medium-FD-WOL"
+                    }
+                }
+            }
         }
     }
 });

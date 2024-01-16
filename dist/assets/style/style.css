@@ -12113,11 +12113,31 @@ i {
 
 .main {
   background-color: #f2f7ff;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   transition: all 0.5s;
   width: 100%;
   direction: rtl;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #aaa #f1f1f1;
+  scrollbar-width: thin;
+  /* Firefox */
+}
+.main::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.main::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+.main:hover::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.main:hover::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+.main:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #646464;
 }
 
 @media (min-width: 992px) {
