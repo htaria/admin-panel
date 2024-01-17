@@ -83,4 +83,7 @@ i {
   &:active {
     border: 2px solid #ebf3ff !important;
   }
+  &:focus,&:focus-visible,&:visited {
+    border: 2px solid #ebf3ff !important;
+  }
 }

@@ -12009,6 +12009,9 @@ i {
 .btn-light-primary:active {
   border: 2px solid #ebf3ff !important;
 }
+.btn-light-primary:focus, .btn-light-primary:focus-visible, .btn-light-primary:visited {
+  border: 2px solid #ebf3ff !important;
+}
 
 .sidebar {
   width: 4rem;
@@ -12199,6 +12202,19 @@ i {
   font-weight: 700;
 }
 
+.modal-header .btn-close {
+  padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+  margin: 0;
+}
+
+.btn-show {
+  border-color: #ebf3ff;
+}
+
+.dropdown-item i {
+  color: #6c757d;
+}
+
 /* Utilities */
 body {
   direction: rtl;
@@ -12282,5 +12298,8 @@ i {
   border: 2px solid #ebf3ff;
 }
 .btn-light-primary:active {
+  border: 2px solid #ebf3ff !important;
+}
+.btn-light-primary:focus, .btn-light-primary:focus-visible, .btn-light-primary:visited {
   border: 2px solid #ebf3ff !important;
 }
